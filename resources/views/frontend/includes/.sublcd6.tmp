@@ -1,0 +1,137 @@
+<div class="grup-menu">
+	<ul class="list-unstyled">
+		<li><a href="#">Timeline</a></li>
+		<li><a href="#">Member</a></li>
+		<li><a href="#">Materi</a></li>
+		<li><a href="#">Tugas</a></li>
+	</ul>
+</div>
+<div class="panel panel-default">
+	<div class="panel-heading add-post-heading">
+		<h4 class="panel-title">Member List</h4>
+	</div>
+	<div class="panel-body">
+		<div class="member-list row">
+			<div class="col-md-6">
+				<div class="media">
+				  <a class="pull-left" href="#">
+				    <img class="media-object" src="holder.js/100x100/sky" alt="...">
+				  </a>
+				  <div class="media-body">
+				    <h4 class="media-heading">Bayu Darmantra</h4>
+				    Also member from class A101
+				  </div>
+				</div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="media">
+				  <a class="pull-left" href="#">
+				    <img class="media-object" src="holder.js/100x100/sky" alt="...">
+				  </a>
+				  <div class="media-body">
+				    <h4 class="media-heading">Bayu Darmantra</h4>
+				     Also member from class A101
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="panel panel-default">
+	<div class="panel-heading add-post-heading">
+		<h4 class="panel-title">
+			<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="add-post">
+	          Tab Content
+	        </a>
+		</h4>
+	</div>
+	<div id="collapseTwo" class="panel-collapse collapse-in">
+	<div class="panel-body">
+		<div role="tabpanel">
+
+		  <!-- Nav tabs -->
+		  <ul class="nav nav-tabs" role="tablist">
+		    <li role="presentation" class="active"><a href="#member" aria-controls="member" role="tab" data-toggle="tab">Member</a></li>
+		    <li role="presentation"><a href="#files" aria-controls="files" role="tab" data-toggle="tab">Files</a></li>
+		    <li role="presentation"><a href="#announcement" aria-controls="announcement" role="tab" data-toggle="tab">Announcement</a></li>
+		  </ul>
+
+		  <!-- Tab panes -->
+		  <div class="tab-content">
+		    <div role="tabpanel" class="tab-pane fade in active" id="member">
+				<div class="row member-list-wrapper">
+				  <div class="col-md-2 member-list-thumb">
+				    <a href="#" class="">
+				      <img data-src="holder.js/60x60/sky" alt="..." class="img img-circle center-block">
+				      <span class="pull-right" style="text-align:center">Bayu Darmantra</span>
+				    </a>
+				  </div>
+
+				  <div class="col-md-2 member-list-thumb">
+				    <a href="#" class="">
+				      <img data-src="holder.js/60x60/sky" alt="..." class="img img-circle center-block">
+				      <span class="pull-right" style="text-align:center">Bayu Darmantra</span>
+				    </a>
+				  </div>
+
+				  <div class="col-md-2 member-list-thumb">
+				    <a href="#" class="">
+				      <img data-src="holder.js/60x60/sky" alt="..." class="img img-circle center-block">
+				      <span class="pull-right" style="text-align:center">Bayu Darmantra</span>
+				    </a>
+				  </div>
+
+				  <div class="col-md-2 member-list-thumb">
+				    <a href="#" class="">
+				      <img data-src="holder.js/60x60/sky" alt="..." class="img img-circle center-block">
+				      <span class="pull-right" style="text-align:center">Bayu Darmantra</span>
+				    </a>
+				  </div>
+
+				  <div class="col-md-2 member-list-thumb">
+				    <a href="#" class="">
+				      <img data-src="holder.js/60x60/sky" alt="..." class="img img-circle center-block">
+				      <span class="pull-right" style="text-align:center">Bayu Darmantra</span>
+				    </a>
+				  </div>
+
+				  <div class="col-md-2 member-list-thumb">
+				    <a href="#" class="">
+				      <img data-src="holder.js/60x60/sky" alt="..." class="img img-circle center-block">
+				      <span class="pull-right" style="text-align:center">Bayu Darmantra</span>
+				    </a>
+				  </div>
+
+				  <div class="col-md-2 member-list-thumb">
+				    <a href="#" class="">
+				      <img data-src="holder.js/60x60/sky" alt="..." class="img img-circle center-block">
+				      <span class="pull-right" style="text-align:center">Bayu Darmantra</span>
+				    </a>
+				  </div>
+
+				  <div class="col-md-2 member-list-thumb">
+				    <a href="#" class="">
+				      <img data-src="holder.js/60x60/sky" alt="..." class="img img-circle center-block">
+				      <span class="pull-right" style="text-align:center">Bayu Darmantra</span>
+				    </a>
+				  </div>
+
+				  <div class="col-md-2 member-list-thumb">
+				    <a href="#" class="">
+				      <img data-src="holder.js/60x60/sky" alt="..." class="img img-circle center-block">
+				      <span class="pull-right" style="text-align:center">Bayu Darmantra</span>
+				    </a>
+				  </div>
+				</div>
+		    </div>
+		    <div role="tabpanel" class="tab-pane fade" id="files"></div>
+		    <div role="tabpanel" class="tab-pane fade" id="announcement">...</div>
+		  </div>
+
+		</div>
+	</div>
+	</div>
+</div>

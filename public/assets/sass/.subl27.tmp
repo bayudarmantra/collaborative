@@ -1,0 +1,549 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+/* GLOBAL VARIABLES & MIXINS
+ * Variabel global yang akan digunakan dalam website */
+
+ @import "compass/css3";
+
+ $primary-color:#03A9F4;
+ $radius:0;
+ $user-body:#E9EAED;
+ $home-body:#FFF;
+ $btn-padding:7px 12px;
+ $sidebar-color:#F7F7F7;
+ $sidebar-title-border:5px solid #F75325;
+ $sidebar-title-background: #2C3E50;
+ $navbar-hover:#2980B9;
+ $text-color:#333;
+ //$link-color:
+ //$link-color-hover:
+
+ @mixin border-radius($radius){
+  border-radius: $radius;
+  background-clip: padding-box;
+ }
+
+
+ /*----------------------------------------------------*/
+
+ /* Custom Button
+  *
+  */
+
+  .animate{
+  	@include single-transition(all,0.2s);
+  }
+
+   .animate-autosize{
+  	@include single-transition(height,0.2s);
+  }
+
+ .cs-btn{
+  position: relative;
+  padding: $btn-padding;
+  text-align:center;
+  color:#FFF;
+  line-height:1.42857143;
+  font-family:'Oswald', Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  white-space: nowrap;
+  display: inline-block;
+  margin-bottom: 0;
+  background-image: none;
+  border: 1px solid transparent;
+  vertical-align: middle;
+
+	  &:active{
+	  	 @include translate(0px,5px);
+	 	 border-bottom: 1px solid;
+	  }
+
+	  &:hover, &:visited{
+	  	text-decoration: none;
+  		color: #FFF;
+	  }
+ }
+
+ .blue{
+ 	background-color: #3498DB;
+    border-bottom: 5px solid #2980B9;
+    text-shadow: 0px -2px #2980B9;
+ }
+
+  /*----------------------------------------------------*/
+
+ /* GLOBAL SETUP
+ * Pengaturan global yang digunakan dalam website */
+html, body{
+  height: 100%;
+}
+
+ a{
+ 	color:$primary-color;
+ }
+
+ .container-fluid{
+  padding-left: 0;
+  padding-right: 0;
+  margin-right: 0;
+  width: 100%;
+ }
+
+ .row{
+  margin-right:0;
+ }
+
+ .navbar{
+ 	@include border-radius($radius);
+
+ 	.navbar-nav > li > a.nav-btn{
+	  padding-top: 5px;
+	  padding-bottom: 5px;
+	  margin-top: 10px;
+	  color: #FFF;
+	}
+ }
+
+ .user-navbar{
+  background-color: $primary-color;
+  border-bottom:$sidebar-title-border;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
+
+  a{
+  	color: #FFF;
+
+  	&:hover, &:focus, &:active, &:visited{
+  		background-color:$navbar-hover !important;
+  	}
+  }
+}
+
+ .home-body{
+ 	background-color:$home-body;
+ }
+
+ .user-body{
+ 	background-color:$user-body;
+ }
+
+ .wrapper-fixed{
+ 	width: 1000px;
+ 	margin:0 auto;
+ }
+
+ .fixed-wrapper{
+ 	width:90%;
+    margin: 0 auto;
+ }
+
+ .logo{
+ 	margin-top: -15px;
+ }
+
+ /*----------------------------------------------------*/
+
+ /* DROPDOWN MENU FOR NOTIFICATIONS, MESSAGES ETC
+  * Custom dropdown menu untuk menampilkan notifikasi dan lainnya*/
+ .navbar-right .dropdown-menu{
+ 	padding:0;
+ 	width: 300px;
+ 	top: 57px;
+ 	@include border-radius(0);
+ 	border:1px solid #999;
+
+ 	&:before{
+		content: '';
+		display: block;
+		position: absolute;
+		width: 0;
+		height: 0;
+		color: transparent;
+		border: 10px solid #000;
+		border-color: transparent transparent #FFF;
+		margin-top: -18px;
+		margin-left: 265px;
+		z-index: -99;
+ 	}
+
+ 	.dropdown-title, .dropdown-footer{
+ 		padding:5px;
+ 	}
+
+ 	.dropdown-title{
+ 		text-align: center;
+ 		border-bottom:1px solid #DDD;
+ 	}
+
+ 	.dropdown-body{
+		height: 300px;
+		overflow: auto;
+
+		.notification{
+			padding:5px;
+			border-bottom:1px solid #DDD;
+
+			.media-body a{
+				color: #333;
+
+				&:hover{
+					text-decoration: underline;
+					background-color:#FFF !important;
+				}
+			}
+		}
+ 	}
+
+	.dropdown-footer{
+		text-align: center;
+		background-color:$user-body;
+	}
+ }
+
+ .badge-notify{
+   background:red;
+   position:absolute;
+   top: 5px;
+   left: 23px;
+}
+
+.navbar-right .user-dropdown{
+	border:1px solid #FFF;
+	padding-bottom:5px;
+	.dropdown-bg{
+		height:170px;
+		background-color:#999;
+		padding-top:20px;
+		text-align:center;
+
+		img{
+			margin-bottom:10px;
+		}
+
+		span{
+			font-size: 16px;
+			color: #FFF;
+		}
+	}
+
+	.dropdown-footer{
+		background-color:transparent;
+	}
+}
+
+/* FRONTEND PAGES
+ * Berisi style css untuk halaman website untuk user */
+.col-md-7 .search{
+	width:100% !important;
+}
+/*Homepage*/
+.feature-panel{
+  margin-top: 40px;
+}
+
+.vcenter{
+  position: relative;
+  top: 30%;
+}
+
+.special{
+	height:100%;
+
+	.main-banner{
+	  height: 100%;
+	  background: url('../images/home_2.jpg') no-repeat center center;
+	  background-size: cover; 
+	  margin-top: 0;
+	  padding-right: 0;
+	}
+}
+
+/*User Page*/
+.fixed-wrapper{
+  width:90%;
+  margin: 0 auto;
+}
+
+/*Add Post*/
+.panel-default{
+	margin-bottom:10px;
+
+	.add-post-wrapper .form-control, .textarea{
+	  border-radius: 0;
+	}
+
+	> .add-post-heading{
+		background-color:$sidebar-title-background;
+	    color:#FFF;
+	    border-radius:0;
+	    border-left:$sidebar-title-border;
+	}
+
+	.add-post-content{
+		position: relative;
+  		left: 15px;
+
+  		span{
+  		 margin-right:10px;	
+  		}
+	}
+}
+
+/*Post*/
+.post-wrapper{
+  outline: 1px solid #DDD;
+  margin-bottom:10px;
+
+  .post{
+  	padding: 10px;
+    border-bottom: 1px solid #DDD;
+  }
+
+  .post-comment{
+  	margin-top: 0;
+    padding: 10px 10px 10px 10px;
+    background-color: #F0F0F0;
+  }
+
+  .add-post-comment{
+  	padding:10px;
+    background-color: #F0F0F0;
+
+  	.textarea{
+  	   width: 535px;
+  	   @include border-radius(0);
+  	   padding:0 0 0 5px;
+  	}
+  }
+}
+
+.panel-title{
+	a.add-post{
+	  display: block;
+      text-decoration: none;
+
+      &:hover, &:visited{
+      	text-decoration: none;
+      }
+	}
+}
+
+/*Content*/
+.content{
+  background-color: #FFF;
+  margin-bottom: 20px;
+
+	  .content-header{
+	   padding: 10px;
+	   background-color: #2C3E50;
+	   border-left:$sidebar-title-border;
+	   color: #FFF;
+	  }
+
+	  .content-body{
+	   padding: 10px;
+	   color: $text-color;
+	  }
+
+	.content-media{
+	  padding: 5px;
+	  position: relative;
+	}
+
+	.post-time{
+	  margin-top: -5px;
+	  padding-bottom: 10px;
+
+	  a{
+	  	font-size: 12px;
+			color: #BBB;
+	  }
+	}    
+}
+
+/*Left Sidebar*/
+.sidebar-wrapper{
+  background-color: $sidebar-color;
+  padding: 10px 0 0 0;
+  color: $text-color;
+  outline: 1px solid #DDD;
+}
+
+.sidebar-title{
+  padding: 5px 10px;
+  background-color: $sidebar-title-background;
+  border-left:$sidebar-title-border;
+  color: #FFF;
+  font-weight: 600;
+  font-size: 15px;
+  margin: 0;
+}
+
+.list-group{
+  margin-bottom:0;
+}
+
+a.sidebar-item{
+  background-color: transparent;
+  color: $text-color;
+  border-top:none;
+  border-right: none;
+  border-left:none;
+  border-bottom: 1px solid #EAE8E8;
+  padding: 5px 15px;
+  position: relative;
+
+  &:hover{
+  	background-color: $primary-color;
+    color: #FFF;
+    border-left:$sidebar-title-border;
+    padding-left:10px;
+
+    .arrow-right{
+	    width: 0; 
+		height: 0; 
+		border-top: 8px solid transparent;
+	    border-bottom: 11px solid transparent;
+	    border-right: 7px solid $user-body;
+	    position: relative;
+	    left: 30px;
+	    top: 1px;
+    }
+  }
+
+  &:first-child, &:last-child{
+  	border-radius: 0;
+  }
+}
+
+.user-profile-wrapper{
+	background-color:transparent;
+	.user-profile-panel{
+		margin-bottom: 15px;
+		background-color:#999;
+		height: 300px;
+		position:relative;
+
+		.user-thumb{
+			padding-top: 20px;
+		}
+
+		.user-desc{
+			padding-top:10px;
+			text-align: center;
+
+			.user-name, .user-quote{
+				display: inline-block;
+				font-size: 18px;
+				color: #FFF;
+				padding:5px;
+				background-color:#000;
+			}
+
+			.user-name{
+				margin-bottom: 5px;
+			}
+
+			.user-quote{
+				font-size: 14px;
+			}
+		}
+
+		.user-sum{
+			padding:5px;
+			width: 100%;
+			background-color:#333;
+			position:absolute;
+			bottom:0;
+
+			.summary{
+				text-align: center;
+				margin:0 auto;
+				width: 75%;
+
+				span{
+					display: block;
+					color: #FFF;
+
+						&:first-child{
+							font-size: 20px;
+						}
+
+						&:last-child{
+							font-size: 10px;
+						}
+				}
+			}
+		}
+	}
+
+	.user-profile-content{
+		background-color:#E9EAED;
+		border:1px solid #CCC;
+
+		/* active tab color */
+		.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+		  border:none;
+		  border-top: 3px solid #F75325;
+		}
+
+		/* hover tab color */
+		.nav-tabs>li>a:hover {
+		  border-color: #E9EAED;
+		}
+
+		.tab-content{
+			background-color:#FFF;
+
+			.row{
+				padding:10px;
+				padding-left:25px;
+			}
+
+			.col-md-6{
+				padding-bottom:10px;
+				padding-top:10px;
+				border-bottom:1px solid #333;
+
+				div{
+					margin-left: 10px;
+					margin-top: 30px;
+
+					a:last-child{
+						font-size: 12px;
+						color: #999;
+					}
+				}
+			}
+		}
+	}
+}
+
+/*Right Sidebar*/
+.sidebar-right{
+  background-color: $sidebar-color;
+  padding-bottom: 10px;
+  padding-top:0;
+  color: $text-color;
+}
+
+.sidebar-right-media{
+  border-bottom:1px dotted $text-color;
+  padding:0px 10px 10px 10px;
+}
+
+/*Member List*/
+.member-list-wrapper{
+  margin: 10px 0 0 5px;
+}
+
+.member-list-thumb{
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+
+/*----------------------------------------------------*/

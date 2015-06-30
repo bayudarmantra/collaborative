@@ -1,0 +1,17 @@
+<div class="col-md-2 bck-sidebar">
+	<div class="list-group" id="list-group">
+	  <a href="#" class="list-group-item">
+	    <span class="glyphicon glyphicon-th-large"></span> Cras justo odio
+	  </a>
+	  <a href="#" class="list-group-item" data-toggle="collapse" data-parent="#list-group" href="#collapseOne">
+	  <span class="glyphicon glyphicon-th-large"></span> Dapibus ac facilisis in
+	  </a>
+	  <div id="collapseOne" class="collapse">ghfhfjfj</div>
+	  <a href="#" class="list-group-item">
+	  <span class="glyphicon glyphicon-th-large"></span> Morbi leo risus</a>
+	  <a href="#" class="list-group-item">
+	  <span class="glyphicon glyphicon-th-large"></span> Porta ac consect</a>
+	  <a href="#" class="list-group-item">
+	  <span class="glyphicon glyphicon-th-large"></span> Vestibulum at eros</a>
+	</div>
+</div>

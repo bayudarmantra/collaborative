@@ -1,0 +1,72 @@
+<div class="col-md-2 bck-sidebar">
+	<div class="user">
+		<img src="holder.js/80x80/sky" class="img img-circle center-block">
+		<span>Bayu Darmantra</span>
+	</div>
+
+	<div class="list-group" id="list-group">
+	  <a href="#" class="list-group-item">
+	    <span class="fa fa-dashboard"></span> dashboard
+	  </a>
+
+	  <a href="#" class="list-group-item" data-toggle="collapse" data-target="#mhs">
+	  <span class="fa fa-graduation-cap"></span> mahasiswa
+	  </a>
+	  <div id="mhs" class="list-group collapse child">
+		  <a href="#" class="list-group-item">
+		  <span class="glyphicon glyphicon-th-large"></span> tambah baru</a>
+		  <a href="#" class="list-group-item">
+		  <span class="glyphicon glyphicon-th-large"></span> daftar mahasiswa</a>
+	  </div>
+
+	  <a href="#" class="list-group-item" data-toggle="collapse" data-target="#dosen">
+	  <span class="fa fa-groups"></span> dosen
+	  </a>
+	  <div id="dosen" class="list-group collapse child">
+		  <a href="#" class="list-group-item">
+		  <span class="glyphicon glyphicon-th-large"></span> tambah baru</a>
+		  <a href="#" class="list-group-item">
+		  <span class="glyphicon glyphicon-th-large"></span> daftar dosen</a>
+	  </div>
+
+	  <a href="#" class="list-group-item" data-toggle="collapse" data-target="#mk">
+	  <span class="glyphicon glyphicon-th-large"></span> mata kuliah
+	  </a>
+	  <div id="mk" class="list-group collapse child">
+		  <a href="#" class="list-group-item">
+		  <span class="glyphicon glyphicon-th-large"></span> tambah baru</a>
+		  <a href="#" class="list-group-item">
+		  <span class="glyphicon glyphicon-th-large"></span> daftar mata kuliah</a>
+	  </div>
+
+	  <a href="#" class="list-group-item" data-toggle="collapse" data-target="#kelas">
+	  <span class="glyphicon glyphicon-th-large"></span> kelas
+	  </a>
+	  <div id="kelas" class="list-group collapse child">
+		  <a href="#" class="list-group-item">
+		  <span class="glyphicon glyphicon-th-large"></span> tambah baru</a>
+		  <a href="#" class="list-group-item">
+		  <span class="glyphicon glyphicon-th-large"></span> daftar kelas</a>
+	  </div>
+
+	  <a href="#" class="list-group-item" data-toggle="collapse" data-target="#perkuliahan">
+	  <span class="glyphicon glyphicon-th-large"></span> perkuliahan
+	  </a>
+	  <div id="perkuliahan" class="list-group collapse child">
+		  <a href="#" class="list-group-item">
+		  <span class="glyphicon glyphicon-th-large"></span> tambah baru</a>
+		  <a href="#" class="list-group-item">
+		  <span class="glyphicon glyphicon-th-large"></span> daftar perkuliahan</a>
+	  </div>
+
+	  <a href="#" class="list-group-item" data-toggle="collapse" data-target="#pengumuman">
+	  <span class="fa fa-newspaper-o"></span> pengumuman
+	  </a>
+	  <div id="pengumuman" class="list-group collapse child">
+		  <a href="#" class="list-group-item">
+		  <span class="glyphicon glyphicon-th-large"></span> tambah baru</a>
+		  <a href="#" class="list-group-item">
+		  <span class="glyphicon glyphicon-th-large"></span> daftar pengumuman</a>
+	  </div>
+	</div>
+</div>

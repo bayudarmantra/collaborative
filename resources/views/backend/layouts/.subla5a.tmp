@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+   @include('backend.includes.backend-head')
+</head>
+<body class="backend-body">
+	@include('backend.includes.backend-header')
+  <div class="container-fluid" style="height:100%;">
+    <div class="row" style="height:100%;">
+    	@include('backend.includes.backend-sidebar')
+    	@yield('content')
+    </div>
+   
+  </div>
+
+  @include('backend.includes.backend-foot')
+</body>
+</html>
+

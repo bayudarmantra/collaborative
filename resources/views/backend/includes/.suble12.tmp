@@ -1,0 +1,14 @@
+<div class="col-md-2 bck-sidebar">
+	<div class="list-group">
+	  <a href="#" class="list-group-item">
+	    Cras justo odio
+	  </a>
+	  <a href="#" class="list-group-item">
+	  <div class="hov"><span class="glyphicon glyphicon-th-large"></span> Dapibus ac facilisis in</div>
+	  <span class="glyphicon glyphicon-th-large"></span> Dapibus ac facilisis in
+	  </a>
+	  <a href="#" class="list-group-item">Morbi leo risus</a>
+	  <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+	  <a href="#" class="list-group-item">Vestibulum at eros</a>
+	</div>
+</div>

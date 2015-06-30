@@ -1,0 +1,1276 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* GLOBAL VARIABLES & MIXINS
+ * Variabel global yang akan digunakan dalam website */
+@font-face {
+  font-family: TFSans;
+  src: url(../fonts/PTS55F.ttf);
+}
+/*Backend Variables*/
+/* line 39, ../sass/screen.scss */
+body {
+  font-family: TFSans;
+  font-size: 14px;
+}
+
+/*----------------------------------------------------*/
+/* Custom Button
+ *
+ */
+/* line 50, ../sass/screen.scss */
+.animate {
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+/* line 54, ../sass/screen.scss */
+.animate-autosize {
+  -moz-transition: height 0.2s;
+  -o-transition: height 0.2s;
+  -webkit-transition: height 0.2s;
+  transition: height 0.2s;
+}
+
+/* line 58, ../sass/screen.scss */
+.cs-btn {
+  position: relative;
+  padding: 7px 12px;
+  text-align: center;
+  color: #FFF;
+  line-height: 1.42857143;
+  font-family: 'Oswald', Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  white-space: nowrap;
+  display: inline-block;
+  margin-bottom: 0;
+  background-image: none;
+  border: 1px solid transparent;
+  vertical-align: middle;
+}
+/* line 74, ../sass/screen.scss */
+.cs-btn:active {
+  -moz-transform: translate(0px, 5px);
+  -ms-transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+  transform: translate(0px, 5px);
+  border-bottom: 1px solid;
+}
+/* line 79, ../sass/screen.scss */
+.cs-btn:hover, .cs-btn:visited {
+  text-decoration: none;
+  color: #FFF;
+}
+
+/* line 85, ../sass/screen.scss */
+.blue {
+  background-color: #3498DB;
+  border-bottom: 5px solid #2980B9;
+  text-shadow: 0px -2px #2980B9;
+}
+
+/* line 91, ../sass/screen.scss */
+.custom-btn {
+  display: inline-block;
+  padding: 7px 15px;
+  color: #FFF;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  background-color: #E62F17;
+  font-weight: bold;
+  border: 1px solid transparent;
+  transition: background-color 300ms ease;
+}
+/* line 103, ../sass/screen.scss */
+.custom-btn:hover {
+  background-color: #a02110;
+  color: #FFF;
+  text-decoration: none;
+}
+
+/*----------------------------------------------------*/
+/* GLOBAL SETUP
+* Pengaturan global yang digunakan dalam website */
+/* line 114, ../sass/screen.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 118, ../sass/screen.scss */
+a {
+  color: #E62F17;
+}
+
+/* line 122, ../sass/screen.scss */
+a:hover {
+  color: #f7311b;
+}
+
+/* line 126, ../sass/screen.scss */
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+  margin-right: 0;
+  width: 100%;
+}
+
+/* line 133, ../sass/screen.scss */
+.row {
+  margin-right: 0;
+}
+
+/* line 137, ../sass/screen.scss */
+.navbar {
+  border-radius: 0;
+  background-clip: padding-box;
+}
+/* line 140, ../sass/screen.scss */
+.navbar .navbar-nav > li > a.nav-btn {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 10px;
+  color: #FFF;
+}
+
+/* line 148, ../sass/screen.scss */
+.user-navbar {
+  background-color: #E62F17;
+  border-bottom: 5px solid #F75325;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
+}
+/* line 153, ../sass/screen.scss */
+.user-navbar a {
+  color: #FFF;
+}
+/* line 156, ../sass/screen.scss */
+.user-navbar a:hover, .user-navbar a:focus, .user-navbar a:active, .user-navbar a:visited {
+  background-color: transparent !important;
+}
+
+/* line 162, ../sass/screen.scss */
+.home-body {
+  background-color: #FFF;
+}
+
+/* line 166, ../sass/screen.scss */
+.wrapper {
+  padding: 30px;
+}
+
+/* line 170, ../sass/screen.scss */
+.user-body {
+  background-color: #E9EAED;
+}
+
+/* line 174, ../sass/screen.scss */
+.backend-body {
+  background-color: #1c2b36;
+}
+
+/* line 178, ../sass/screen.scss */
+.wrapper-fixed {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* line 183, ../sass/screen.scss */
+.fixed-wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* line 188, ../sass/screen.scss */
+.logo {
+  margin-top: -15px;
+}
+
+/* line 192, ../sass/screen.scss */
+.modal {
+  text-align: center;
+}
+
+/* line 196, ../sass/screen.scss */
+.modal:before {
+  display: inline-block;
+  vertical-align: middle;
+  content: " ";
+  height: 100%;
+}
+
+/* line 203, ../sass/screen.scss */
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+/*Login Form*/
+/* line 210, ../sass/screen.scss */
+.login-logo {
+  width: 334px;
+  height: 200px;
+  margin: 0 auto;
+  background-image: url("../images/logoFinal2.png");
+  position: relative;
+  top: 40px;
+}
+
+/* line 219, ../sass/screen.scss */
+.login-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -90px;
+  margin-left: -175px;
+  width: 350px;
+  height: 400px;
+}
+/* line 228, ../sass/screen.scss */
+.login-form .input-group-addon {
+  background-color: #E62F17;
+}
+/* line 231, ../sass/screen.scss */
+.login-form .input-group-addon span {
+  color: #FFF;
+}
+
+/* line 237, ../sass/screen.scss */
+.cloud-back {
+  width: 100%;
+  height: 152px;
+  background-image: url("../images/cloud.png");
+  background-repeat: repeat-x;
+  position: absolute;
+  bottom: 0;
+}
+
+/*----------------------------------------------------*/
+/* DROPDOWN MENU FOR NOTIFICATIONS, MESSAGES ETC
+ * Custom dropdown menu untuk menampilkan notifikasi dan lainnya*/
+/* line 250, ../sass/screen.scss */
+.navbar-right .dropdown-menu {
+  padding: 0;
+  width: 300px;
+  top: 57px;
+  border-radius: 0;
+  background-clip: padding-box;
+  border: 1px solid #999;
+}
+/* line 257, ../sass/screen.scss */
+.navbar-right .dropdown-menu:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  color: transparent;
+  border: 10px solid #000;
+  border-color: transparent transparent #FFF;
+  margin-top: -18px;
+  margin-left: 265px;
+  z-index: -99;
+}
+/* line 271, ../sass/screen.scss */
+.navbar-right .dropdown-menu .dropdown-title, .navbar-right .dropdown-menu .dropdown-footer {
+  padding: 5px;
+}
+/* line 275, ../sass/screen.scss */
+.navbar-right .dropdown-menu .dropdown-title {
+  text-align: center;
+  border-bottom: 1px solid #DDD;
+}
+/* line 280, ../sass/screen.scss */
+.navbar-right .dropdown-menu .dropdown-body {
+  height: 300px;
+  overflow: auto;
+}
+/* line 284, ../sass/screen.scss */
+.navbar-right .dropdown-menu .dropdown-body .notification {
+  padding: 5px;
+  border-bottom: 1px solid #DDD;
+}
+/* line 288, ../sass/screen.scss */
+.navbar-right .dropdown-menu .dropdown-body .notification .media-body a {
+  color: #333;
+}
+/* line 291, ../sass/screen.scss */
+.navbar-right .dropdown-menu .dropdown-body .notification .media-body a:hover {
+  text-decoration: underline;
+  background-color: #FFF !important;
+}
+/* line 299, ../sass/screen.scss */
+.navbar-right .dropdown-menu .dropdown-footer {
+  text-align: center;
+  background-color: #E9EAED;
+}
+
+/* line 305, ../sass/screen.scss */
+.badge-notify {
+  background: #147AC4;
+  position: absolute;
+  top: 5px;
+  left: 23px;
+  border: 1px solid #FFF;
+}
+
+/* line 313, ../sass/screen.scss */
+.navbar-right .user-dropdown {
+  border: 1px solid #FFF;
+  padding-bottom: 5px;
+}
+/* line 316, ../sass/screen.scss */
+.navbar-right .user-dropdown .dropdown-bg {
+  height: 170px;
+  background-color: #999;
+  padding-top: 20px;
+  text-align: center;
+}
+/* line 322, ../sass/screen.scss */
+.navbar-right .user-dropdown .dropdown-bg img {
+  margin-bottom: 10px;
+}
+/* line 326, ../sass/screen.scss */
+.navbar-right .user-dropdown .dropdown-bg span {
+  font-size: 16px;
+  color: #FFF;
+}
+/* line 332, ../sass/screen.scss */
+.navbar-right .user-dropdown .dropdown-footer {
+  background-color: transparent;
+}
+
+/* FRONTEND PAGES
+ * Berisi style css untuk halaman website untuk user */
+/* line 339, ../sass/screen.scss */
+.col-md-7 .search {
+  width: 100% !important;
+}
+
+/* line 343, ../sass/screen.scss */
+ul.profil-title {
+  font-weight: bold;
+  color: #E62F17;
+}
+
+/* line 349, ../sass/screen.scss */
+ul.profil-list li {
+  text-transform: uppercase;
+}
+/* line 353, ../sass/screen.scss */
+ul.profil-list hr {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+/*Homepage*/
+/* line 360, ../sass/screen.scss */
+.bg-overlay {
+  background-image: url("../images/overlay.png");
+  background-repeat: repeat;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 367, ../sass/screen.scss */
+.top-wrapper {
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  margin-top: -30px;
+}
+
+/* line 373, ../sass/screen.scss */
+.home-header {
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  transition: all 500ms ease;
+  z-index: 999;
+}
+/* line 380, ../sass/screen.scss */
+.home-header .header-wrapper {
+  width: 90%;
+  height: 100px;
+  padding-top: 10px;
+  margin: 0 auto;
+}
+/* line 386, ../sass/screen.scss */
+.home-header .header-wrapper img {
+  position: relative;
+  left: 60px;
+  transition: all 500ms ease;
+}
+/* line 392, ../sass/screen.scss */
+.home-header .header-wrapper ul li {
+  display: inline-block;
+  margin-right: 30px;
+}
+/* line 395, ../sass/screen.scss */
+.home-header .header-wrapper ul li a {
+  color: #FFF;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 100px;
+  padding-bottom: 5px;
+  transition: all 500ms ease;
+}
+/* line 403, ../sass/screen.scss */
+.home-header .header-wrapper ul li a:hover {
+  text-decoration: none;
+  border-bottom: 3px solid #FFF;
+}
+
+/* line 412, ../sass/screen.scss */
+.sticky {
+  background-color: #E62F17;
+}
+/* line 415, ../sass/screen.scss */
+.sticky img {
+  height: 80px;
+}
+/* line 419, ../sass/screen.scss */
+.sticky a {
+  font-size: 15px !important;
+  line-height: 80px !important;
+}
+
+/* line 425, ../sass/screen.scss */
+.home-headline {
+  position: relative;
+  top: 30px;
+  height: 520px;
+}
+/* line 430, ../sass/screen.scss */
+.home-headline h1 {
+  font-size: 50px;
+  color: #FFF;
+  font-weight: bold;
+  text-align: center;
+  line-height: 300px;
+  height: 200px;
+  letter-spacing: 1px;
+}
+/* line 440, ../sass/screen.scss */
+.home-headline h4 {
+  font-size: 25px;
+  color: #FFF;
+  font-weight: bold;
+  text-align: center;
+  line-height: 10px;
+  height: 40px;
+}
+/* line 449, ../sass/screen.scss */
+.home-headline a {
+  font-size: 20px;
+  color: #FFF;
+  border: 2px solid #FFF;
+  font-weight: bold;
+  display: block;
+  padding: 10px 15px;
+  width: 200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* line 462, ../sass/screen.scss */
+.feature {
+  height: 70%;
+  background-image: url("../images/bg-our-main-skills.jpg");
+  background-size: cover;
+}
+/* line 467, ../sass/screen.scss */
+.feature h1 {
+  font-size: 50px;
+  color: #E62F17;
+  text-align: center;
+  position: relative;
+  top: 20px;
+}
+/* line 475, ../sass/screen.scss */
+.feature .row {
+  width: 80%;
+  margin: 50px auto 0 auto;
+}
+/* line 480, ../sass/screen.scss */
+.feature h3 {
+  color: #FFF;
+  font-size: 30px;
+  font-weight: bold;
+}
+/* line 486, ../sass/screen.scss */
+.feature p {
+  color: #FFF;
+  font-size: 20px;
+  text-align: justify;
+}
+
+/* line 493, ../sass/screen.scss */
+.feature-plain {
+  background-image: none;
+  height: 60%;
+}
+/* line 497, ../sass/screen.scss */
+.feature-plain .row {
+  position: relative;
+  top: 30px;
+}
+/* line 502, ../sass/screen.scss */
+.feature-plain h3 {
+  color: #333;
+}
+/* line 506, ../sass/screen.scss */
+.feature-plain p {
+  color: #333;
+}
+
+/* line 511, ../sass/screen.scss */
+.about {
+  height: 70%;
+}
+/* line 514, ../sass/screen.scss */
+.about h1 {
+  font-size: 50px;
+  color: #E62F17;
+  text-align: center;
+  position: relative;
+  top: 40px;
+}
+/* line 522, ../sass/screen.scss */
+.about p {
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+  font-size: 25px;
+  line-height: 40px;
+  position: relative;
+  top: 65px;
+}
+/* line 531, ../sass/screen.scss */
+.about p strong {
+  color: #E62F17;
+}
+
+/* line 537, ../sass/screen.scss */
+.ready {
+  height: 50%;
+  background-image: url("../images/bg-quote.jpg");
+  background-position: center;
+  background-size: cover;
+}
+/* line 543, ../sass/screen.scss */
+.ready h1 {
+  font-size: 50px;
+  color: #FFF;
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+  top: 100px;
+}
+/* line 552, ../sass/screen.scss */
+.ready a {
+  font-size: 20px;
+  color: #FFF;
+  border: 2px solid #FFF;
+  font-weight: bold;
+  display: block;
+  padding: 10px 15px;
+  width: 200px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  top: 100px;
+}
+
+/* line 567, ../sass/screen.scss */
+.footer {
+  background-color: #E62F17;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 30px;
+  color: #FFF;
+}
+/* line 574, ../sass/screen.scss */
+.footer a {
+  color: #FFF;
+  font-weight: bold;
+}
+
+/*User Page*/
+/* line 581, ../sass/screen.scss */
+.fixed-wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* line 586, ../sass/screen.scss */
+.grup-menu {
+  background-color: #F7F7F7;
+  margin-bottom: 15px;
+}
+/* line 590, ../sass/screen.scss */
+.grup-menu ul {
+  height: 40px;
+}
+/* line 594, ../sass/screen.scss */
+.grup-menu li {
+  width: 25%;
+  float: left;
+}
+/* line 599, ../sass/screen.scss */
+.grup-menu a {
+  display: block;
+  line-height: 40px;
+  text-align: center;
+  height: 40px;
+}
+
+/*Kelas / Grup Top Menu*/
+/* line 610, ../sass/screen.scss */
+.top-menu a:first-child, .top-menu a:last-child {
+  border-radius: 0;
+}
+/* line 614, ../sass/screen.scss */
+.top-menu a {
+  transition: all 300ms ease;
+}
+/* line 618, ../sass/screen.scss */
+.top-menu a:hover {
+  background-color: #E62F17;
+  color: #FFF;
+  border-color: #E62F17;
+  font-weight: bold;
+}
+
+/*Add Post*/
+/* line 627, ../sass/screen.scss */
+.panel-default {
+  margin-bottom: 10px;
+}
+/* line 630, ../sass/screen.scss */
+.panel-default .add-post-wrapper .form-control, .panel-default .textarea {
+  border-radius: 0;
+}
+/* line 634, ../sass/screen.scss */
+.panel-default > .add-post-heading {
+  background-color: #FFF;
+  color: #333;
+  border-radius: 0;
+  border-left: 5px solid #F75325;
+}
+/* line 641, ../sass/screen.scss */
+.panel-default .add-post-content {
+  position: relative;
+  left: 15px;
+}
+/* line 645, ../sass/screen.scss */
+.panel-default .add-post-content span {
+  margin-right: 10px;
+}
+
+/*Post*/
+/* line 652, ../sass/screen.scss */
+.post-wrapper {
+  outline: 1px solid #DDD;
+  margin-bottom: 10px;
+}
+/* line 656, ../sass/screen.scss */
+.post-wrapper .post {
+  padding: 10px;
+  border-bottom: 1px solid #DDD;
+}
+/* line 661, ../sass/screen.scss */
+.post-wrapper .post-comment {
+  margin-top: 0;
+  padding: 10px 10px 5px 10px;
+  background-color: #F6F7F8;
+}
+/* line 667, ../sass/screen.scss */
+.post-wrapper .add-post-comment {
+  padding: 10px;
+  background-color: #F6F7F8;
+}
+/* line 671, ../sass/screen.scss */
+.post-wrapper .add-post-comment .form-group {
+  width: 100%;
+}
+/* line 675, ../sass/screen.scss */
+.post-wrapper .add-post-comment .textarea {
+  width: 100%;
+  border-radius: 0;
+  background-clip: padding-box;
+  padding: 0 0 0 5px;
+}
+
+/* line 684, ../sass/screen.scss */
+.panel-title a.add-post {
+  display: block;
+  text-decoration: none;
+}
+/* line 688, ../sass/screen.scss */
+.panel-title a.add-post:hover, .panel-title a.add-post:visited {
+  text-decoration: none;
+}
+
+/*Content*/
+/* line 695, ../sass/screen.scss */
+.content {
+  margin-bottom: 20px;
+  background-color: #FFF;
+}
+/* line 699, ../sass/screen.scss */
+.content .content-header {
+  padding: 10px;
+  background-color: #2C3E50;
+  border-left: 5px solid #F75325;
+  color: #FFF;
+}
+/* line 706, ../sass/screen.scss */
+.content .content-body {
+  padding: 10px;
+  color: #333;
+}
+/* line 711, ../sass/screen.scss */
+.content .content-media {
+  padding: 5px;
+  position: relative;
+}
+/* line 716, ../sass/screen.scss */
+.content .post-time {
+  margin-top: -5px;
+  padding-bottom: 10px;
+}
+/* line 720, ../sass/screen.scss */
+.content .post-time a {
+  font-size: 12px;
+  color: #BBB;
+}
+
+/*Left Sidebar*/
+/* line 728, ../sass/screen.scss */
+.media-profile {
+  text-align: center;
+  font-weight: bold;
+}
+/* line 731, ../sass/screen.scss */
+.media-profile .media-image {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 10px auto;
+}
+
+/* line 738, ../sass/screen.scss */
+.sidebar-wrapper {
+  padding: 10px 0 0 0;
+  color: #333;
+}
+/* line 742, ../sass/screen.scss */
+.sidebar-wrapper .user-profile {
+  margin-bottom: 15px;
+  margin-top: -10px;
+  padding-top: 10px;
+  background-color: #F7F7F7;
+  outline: 1px solid #DDD;
+}
+/* line 749, ../sass/screen.scss */
+.sidebar-wrapper .user-profile .media-heading {
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+/* line 756, ../sass/screen.scss */
+.sidebar-wrapper .sidebar {
+  margin-bottom: 15px;
+  background-color: #F7F7F7;
+  outline: 1px solid #DDD;
+}
+
+/* line 763, ../sass/screen.scss */
+.sidebar-title {
+  padding: 5px 10px;
+  background-color: #383C3F;
+  border-left: 5px solid #F75325;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 17px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+/* line 775, ../sass/screen.scss */
+.list-group {
+  margin-bottom: 0;
+}
+
+/* line 779, ../sass/screen.scss */
+a.sidebar-item {
+  background-color: transparent;
+  color: #333;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #EAE8E8;
+  padding: 5px 15px;
+  position: relative;
+}
+/* line 789, ../sass/screen.scss */
+a.sidebar-item:hover {
+  background-color: #E62F17;
+  color: #FFF;
+  border-left: 5px solid #F75325;
+  padding-left: 10px;
+}
+/* line 795, ../sass/screen.scss */
+a.sidebar-item:hover .arrow-right {
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 11px solid transparent;
+  border-right: 7px solid #E9EAED;
+  position: relative;
+  left: 30px;
+  top: 1px;
+}
+/* line 807, ../sass/screen.scss */
+a.sidebar-item:first-child, a.sidebar-item:last-child {
+  border-radius: 0;
+}
+
+/*User Profile*/
+/* line 814, ../sass/screen.scss */
+.upload-wrapper {
+  width: 130px;
+  height: 220px;
+  margin: 0 auto;
+}
+
+/* line 820, ../sass/screen.scss */
+.fileUpload {
+  position: relative;
+  overflow: hidden;
+  margin-top: 10px;
+  left: 5px;
+}
+/* line 826, ../sass/screen.scss */
+.fileUpload input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+/* line 839, ../sass/screen.scss */
+.user-profile-wrapper {
+  background-color: transparent;
+}
+/* line 841, ../sass/screen.scss */
+.user-profile-wrapper .user-profile-panel {
+  margin-bottom: 15px;
+  background-image: url("../images/user-back.jpg");
+  height: 300px;
+  position: relative;
+}
+/* line 847, ../sass/screen.scss */
+.user-profile-wrapper .user-profile-panel .user-thumb {
+  padding-top: 50px;
+  width: 130px;
+  height: 130px;
+  margin: 0 auto;
+}
+/* line 853, ../sass/screen.scss */
+.user-profile-wrapper .user-profile-panel .user-thumb img {
+  border: 5px solid #FFF;
+}
+/* line 857, ../sass/screen.scss */
+.user-profile-wrapper .user-profile-panel .user-thumb:hover .change-photo {
+  display: block;
+}
+/* line 861, ../sass/screen.scss */
+.user-profile-wrapper .user-profile-panel .user-thumb .change-photo {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  border-radius: 100px;
+  background-clip: padding-box;
+  display: none;
+  background-image: url("../img/trans.png");
+}
+/* line 869, ../sass/screen.scss */
+.user-profile-wrapper .user-profile-panel .user-thumb .change-photo span {
+  position: relative;
+  left: 38%;
+  top: 40%;
+  font-size: 30px;
+  color: #FFF;
+}
+/* line 879, ../sass/screen.scss */
+.user-profile-wrapper .user-profile-panel .user-desc {
+  padding-top: 10px;
+  text-align: center;
+}
+/* line 883, ../sass/screen.scss */
+.user-profile-wrapper .user-profile-panel .user-desc .user-name {
+  display: inline-block;
+  font-size: 20px;
+  color: #FFF;
+  font-weight: bold;
+  padding: 5px;
+  text-transform: uppercase;
+  margin-top: 50px;
+}
+/* line 893, ../sass/screen.scss */
+.user-profile-wrapper .user-profile-panel .user-desc .user-name {
+  margin-bottom: 5px;
+}
+/* line 898, ../sass/screen.scss */
+.user-profile-wrapper .user-profile-panel .user-sum {
+  padding: 5px;
+  width: 100%;
+  background-color: #E62F17;
+  position: absolute;
+  bottom: 0;
+}
+/* line 905, ../sass/screen.scss */
+.user-profile-wrapper .user-profile-panel .user-sum .summary {
+  text-align: center;
+  margin: 0 auto;
+  width: 75%;
+}
+/* line 910, ../sass/screen.scss */
+.user-profile-wrapper .user-profile-panel .user-sum .summary span {
+  display: block;
+  color: #FFF;
+}
+/* line 914, ../sass/screen.scss */
+.user-profile-wrapper .user-profile-panel .user-sum .summary span:first-child {
+  font-size: 20px;
+  font-weight: bold;
+}
+/* line 919, ../sass/screen.scss */
+.user-profile-wrapper .user-profile-panel .user-sum .summary span:last-child {
+  font-size: 10px;
+}
+/* line 927, ../sass/screen.scss */
+.user-profile-wrapper .user-profile-content {
+  background-color: #E9EAED;
+  border: 1px solid #CCC;
+  /* active tab color */
+  /* hover tab color */
+}
+/* line 932, ../sass/screen.scss */
+.user-profile-wrapper .user-profile-content .nav-tabs > li.active > a, .user-profile-wrapper .user-profile-content .nav-tabs > li.active > a:hover, .user-profile-wrapper .user-profile-content .nav-tabs > li.active > a:focus {
+  border: none;
+  border-top: 3px solid #F75325;
+}
+/* line 938, ../sass/screen.scss */
+.user-profile-wrapper .user-profile-content .nav-tabs > li > a:hover {
+  border-color: #E9EAED;
+}
+/* line 942, ../sass/screen.scss */
+.user-profile-wrapper .user-profile-content .tab-content {
+  background-color: #FFF;
+}
+/* line 946, ../sass/screen.scss */
+.user-profile-wrapper .user-profile-content .tab-content .tab-pane ul {
+  padding: 10px;
+}
+/* line 948, ../sass/screen.scss */
+.user-profile-wrapper .user-profile-content .tab-content .tab-pane ul li {
+  padding: 5px 0;
+}
+/* line 954, ../sass/screen.scss */
+.user-profile-wrapper .user-profile-content .tab-content .tab-title {
+  font-size: 20px;
+  padding: 10px;
+  color: #F75325;
+}
+/* line 960, ../sass/screen.scss */
+.user-profile-wrapper .user-profile-content .tab-content .row {
+  padding: 10px;
+  padding-left: 25px;
+}
+/* line 965, ../sass/screen.scss */
+.user-profile-wrapper .user-profile-content .tab-content .col-md-6 {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+/* line 969, ../sass/screen.scss */
+.user-profile-wrapper .user-profile-content .tab-content .col-md-6 div {
+  margin-left: 10px;
+  margin-top: 30px;
+}
+/* line 973, ../sass/screen.scss */
+.user-profile-wrapper .user-profile-content .tab-content .col-md-6 div a:last-child {
+  font-size: 12px;
+  color: #999;
+}
+
+/*Right Sidebar*/
+/* line 985, ../sass/screen.scss */
+table.table-info tr td {
+  vertical-align: middle;
+}
+/* line 989, ../sass/screen.scss */
+table.table-info span {
+  position: relative;
+  top: 10px;
+}
+
+/* line 995, ../sass/screen.scss */
+.sidebar-right {
+  background-color: #F7F7F7;
+  padding-bottom: 10px;
+  padding-top: 0;
+  color: #333;
+}
+
+/* line 1002, ../sass/screen.scss */
+.sidebar-right-media {
+  border-bottom: 1px dotted #333;
+  padding: 0px 10px 10px 10px;
+}
+
+/*Member List*/
+/* line 1008, ../sass/screen.scss */
+.member-list-wrapper {
+  margin: 10px 0 0 5px;
+}
+
+/* line 1012, ../sass/screen.scss */
+.member-list-thumb {
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+/*GOOGLE DRIVE STORAGE*/
+/* line 1018, ../sass/screen.scss */
+.notConnect {
+  width: 90%;
+  height: 400px;
+  margin: 0 auto;
+  position: relative;
+}
+/* line 1024, ../sass/screen.scss */
+.notConnect .logoButton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -150px;
+  margin-left: -150px;
+  width: 300px;
+  height: 300px;
+}
+
+/*----------------------------------------------------*/
+/* BACKEND PAGES
+ * Berisi style css untuk halaman dashboard untuk admin */
+/* line 1041, ../sass/screen.scss */
+.bck-navbar {
+  margin-bottom: 0;
+}
+/* line 1043, ../sass/screen.scss */
+.bck-navbar .container-fluid {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* line 1049, ../sass/screen.scss */
+.bck-sidebar {
+  padding-right: 0;
+  background-color: #1c2b36;
+  height: 100%;
+}
+/* line 1053, ../sass/screen.scss */
+.bck-sidebar .list-group {
+  margin-top: 0;
+}
+/* line 1055, ../sass/screen.scss */
+.bck-sidebar .list-group .list-group-item:first-child, .bck-sidebar .list-group .list-group-item:last-child {
+  border-radius: 0;
+  background-clip: padding-box;
+}
+/* line 1059, ../sass/screen.scss */
+.bck-sidebar .list-group span {
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+/* line 1063, ../sass/screen.scss */
+.bck-sidebar .list-group .list-group-item {
+  background-color: #1c2b36;
+  border-left: none;
+  border-right: none;
+  border-color: #17232C;
+  color: #8dacc4;
+  text-transform: uppercase;
+  font-size: 12px;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+/* line 1073, ../sass/screen.scss */
+.bck-sidebar .list-group .list-group-item:hover {
+  background-color: #17232C;
+  color: #FFF;
+  border-right: 5px solid #F75325;
+}
+/* line 1079, ../sass/screen.scss */
+.bck-sidebar .list-group .list-group-item:hover span {
+  transform: scale(2);
+  padding-right: 5px;
+}
+/* line 1086, ../sass/screen.scss */
+.bck-sidebar .child {
+  padding-left: 10px;
+  background-color: #17232C;
+}
+/* line 1089, ../sass/screen.scss */
+.bck-sidebar .child .list-group-item {
+  font-size: 10px;
+  background-color: #17232C;
+}
+/* line 1095, ../sass/screen.scss */
+.bck-sidebar .user {
+  padding: 10px;
+  color: #8dacc4;
+  text-align: center;
+}
+/* line 1100, ../sass/screen.scss */
+.bck-sidebar .user img {
+  margin-bottom: 5px;
+}
+
+/* line 1106, ../sass/screen.scss */
+.bck-content-title {
+  padding-top: 15px;
+  border-bottom: 2px dotted #CCC;
+}
+/* line 1109, ../sass/screen.scss */
+.bck-content-title .title {
+  font-size: 25px;
+  padding-left: 15px;
+  margin-top: 10px;
+}
+/* line 1115, ../sass/screen.scss */
+.bck-content-title .breadcrumb {
+  background-color: transparent;
+  margin-bottom: 0px;
+}
+
+/* line 1121, ../sass/screen.scss */
+.bck-content {
+  background-color: #E9EAED;
+  min-height: 100%;
+}
+/* line 1125, ../sass/screen.scss */
+.bck-content .row {
+  padding: 15px 0 15px 15px;
+}
+
+/* line 1131, ../sass/screen.scss */
+.bck-panel .panel-heading, .bck-panel .panel-footer {
+  background-color: #1c2b36;
+  color: #FFF;
+}
+
+/* line 1137, ../sass/screen.scss */
+.bck-table-panel {
+  margin-top: 15px;
+}
+/* line 1139, ../sass/screen.scss */
+.bck-table-panel .row {
+  padding: 5px 15px 5px 15px;
+}
+
+/* line 1145, ../sass/screen.scss */
+.form-validator .has-feedback .form-control-feedback {
+  top: 25px;
+  right: 10px;
+}
+/* line 1150, ../sass/screen.scss */
+.form-validator .form-horizontal .has-feedback .form-control-feedback {
+  top: 0;
+  right: 15px;
+}
+/* line 1156, ../sass/screen.scss */
+.form-validator fieldset .row {
+  padding: 5px 10px;
+}
+
+/* line 1162, ../sass/screen.scss */
+.modal .modal-body {
+  max-height: 450px;
+  overflow-y: auto;
+}
+
+/* line 1167, ../sass/screen.scss */
+.photo-profil {
+  width: 200px;
+  height: 200px;
+  margin-left: 25%;
+}
+
+/* line 1173, ../sass/screen.scss */
+.tb-kelas {
+  margin-bottom: 20px;
+}
+/* line 1175, ../sass/screen.scss */
+.tb-kelas .title {
+  font-weight: bolder;
+  color: #0D8FDB;
+}
+/* line 1180, ../sass/screen.scss */
+.tb-kelas td {
+  padding: 2px 15px 2px 5px;
+}
+
+/* line 1187, ../sass/screen.scss */
+.loader {
+  width: 120px;
+  padding: 10px;
+  background-color: #E62F17;
+  display: none;
+  text-align: center;
+  color: #FFF;
+  margin: 0 auto;
+}
+
+/*Group Notification*/
+/*----------------------------------------------------*/
+/*Google Drive Upload*/
+/* line 1205, ../sass/screen.scss */
+.btn-file {
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 1209, ../sass/screen.scss */
+.btn-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  outline: none;
+  background: white;
+  cursor: inherit;
+  display: block;
+}
+
+/*----------------------------------------------------*/
+/*Tugas List*/
